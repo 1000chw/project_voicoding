@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual</title>
+    <link href="Voico_Manual.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/a5f26fa106.js" crossorigin="anonymous"></script>
+    <script src="menu.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="voi_menu">
+        <div class="menu_bar_logo">
+            <i class="fas fa-microphone-alt"></i>
+        </div>
+        <ul class="menu_bar_content">
+            <a class="basic" id = "use" href="#"><li>How to use</li></a>
+            <a class="basic" id = "Variables" href="#"><li>Assertion Variables</li></a>
+            <a class="basic" id = "Parameters" href="#"><li>Assertion Parameters</li></a>
+            <a class="basic" id = "Basic" href="#"><li>Basic Func usage</li></a>
+            <a class="basic" id = "Loop" href="#"><li>Loop statements</li></a>
+            <a class="basic" id = "IF" href="#"><li>IF statements</li></a>
+            <a class="basic" id = "User" href="#"><li>User Define Func usage</li></a>
+            <a class="basic" id = "Bool" href="#"><li>Bool logic</li></a>
+        </ul>
+        <ul class="menu_bar_icons">
+            <a class="basic" href="Voico_Menu.html" style ="font-size: 17px;"><li><i class="fas fa-home"></i></li></a>
+        </ul>
+        <a href="#" class="menu_toggle"><i class="fas fa-bars"></i></a>
+    </nav>
+    <div class="content">
+        <div class="overall_usage">
+            <h1>Voicoding을 사용하시려면 몇 가지 주의사항이 있습니다.<br></h1>
+
+            <h2>먼저, 모든 선언 혹은 사용에는 조금의 텀을 주시고 말씀해주세요.<br>
+            영어를 사용하게 되는 부분에는 자신이 영어 원어민이 된 것처럼 말씀해주세요.<br></h2>
+
+            <p><p style="font-size: 25px; display: inline; color:#ba2d65;">Basic Func usage</p>에는 Python의 내장함수인 input, print, len, sum, min, max 그리고 수식에 대한 사용법이 적혀 있습니다.<br> 이 중, input과 수식을 제외한 나머지 함수를 사용할 때에는 <p style="font-size: 20px; display: inline; color:#ba2d65;">Assertion Parameters</p>를 참고해 사용해주셔야 합니다.<br>
+
+            <p style="font-size: 25px; display: inline; color:#ba2d65;">Assertion Variables</p>에는 변수 선언의 사용법이 적혀있습니다. <br>변수 선언을 하는 방식에는 문자, 숫자, 리스트, 함수의 방법이 있습니다.<br>
+
+            <p style="font-size: 25px; display: inline; color:#ba2d65;">Loop statements</p>에는 반복문(for, while)의 사용법이 적혀있습니다. <br>타겟 변수를 말씀하실 때에는 <p style="font-size: 20px; display: inline; color:#ba2d65;">Assertion Parameters</p>를 참고해 사용해주세요.<br>
+
+            <p style="font-size: 25px; display: inline; color:#ba2d65;">IF statements</p>에는 조건문(if, elif, else)의 사용법이 적혀있습니다. <br>조건문의 조건식을 사용하시는 방법은 <p style="font-size: 20px; display: inline; color:#ba2d65;">Bool logic</p> 을 참고해 사용해주세요.<br>
+
+            <p style="font-size: 25px; display: inline; color:#ba2d65;">User Define Func usage</p>에는 사용자 정의 함수, def에 대한 사용법이 적혀있습니다. <br>함수에 사용되는 파라미터를 선언하실 때에는 <p style="font-size: 20px; display: inline; color:#ba2d65;">Assertion Parameters</p>를 참고해주세요.<br>
+
+            <p style="font-size: 25px; display: inline; color:#ba2d65;">Assertion Parameters</p>에는 함수 혹은 문장에서 변수가 호출될 때 쓰이는 Parameter의 사용법이 적혀있습니다.<br>
+
+            <p style="font-size: 25px; display: inline; color:#ba2d65;">Bool logic</p>에는 부울 논리식, 조건문의 조건식을 사용하는 방법이 적혀있습니다.</p>
+        </div>
+        <div class="variables">
+            <h1>Assertion variables 사용 방법<br></h1>
+            <p>변수 선언에는 몇 가지의 큰 틀이 존재합니다.<br>
+                <p class="Accent">1. 변수 선언 문자</p><br>
+                변수 선언 문자를 하는 것은 a = 'Hello World' 와 같은 경우를 의미합니다. [변수 선언 문자 a = Hello World] --> a = 'Hello World'와 같이 출력됩니다.<br>
+                <p class="Accent">2. 변수 선언 숫자</p><br>
+                변수 선언 숫자를 하는 것은 a = 4 와 같은 경우를 의미합니다. [변수 선언 숫자 a = 4] --> a = 4 와 같이 출력됩니다. <br>
+                <p class="Accent">3. 변수 선언 리스트</p><br> (
+                변수 선언 리스트를 하는 것은 a = [], a = [1, 2, 3] 과 같은 경우를 의미합니다. [변수 선언 리스트 a = 빈리스트 , 변수 선언 리스트 a = 1, 2, 3] --> a = [], a = [1, 2, 3]와 같이 출력됩니다.<br>
+                <p class="Accent">4. 변수 선언 함수</p><br>
+                변수 선언 함수를 하는 것은 a=sum(), a=len() 과 같은 내장함수를 사용하거나 사용자 정의 함수를 사용하는 경우를 의미합니다. [변수 선언 함수 a=, 기본 함수 사용 sum, 파라미터 선언 c] --> a = sum(c) 과 같이 출력됩니다.<br><p style="font-size: 20px; display: inline; color:#ba2d65;">(파라미터 선언은 Assertion Parameters를 참고해주세요.)</p><br>
+            </p>
+        </div>
+        <div class="parameter">
+            <h1>Assertion Parameters 사용 방법<br></h1>
+            <p>파라미터 선언은 대다수의 함수 선언, 내장함수 사용, 반복문 사용에 있어서 꼭 사용해야 하니 숙지해주세요.<br>
+            파라미터 선언을 하는 방법은 다음과 같습니다.<br> 
+            만약, 파라미터로 a b c 를 선언하고 싶다면, [파라미터 선언 a, b, c]라고 읽어주시면 해당하는 곳에 파라미터로써 입력됩니다.
+            
+            </p>
+        </div>
+        <div class="basic_func">
+            <h1>Basic Func 사용 방법<br></h1>
+            <p>Basic Func에는 파이썬의 내장 함수들이 들어있습니다.<br>
+                대체적으로 같은 틀을 가지고 있으니 방법을 숙지해주세요.<br>
+                <p class="Accent">input의 경우</p>, [변수 선언 함수 a =, 기본 함수 사용 input] --> a = input(); 와 같이 출력됩니다.<br>
+                <p class="Accent">print의 경우</p>, [기본 함수 사용 print, 파라미터 선언 a] --> print(a); 와 같이 출력됩니다.<br>
+                <p class="Accent">sum, max, min, len의 경우</p> [기본 함수 사용 sum, 파라미터 선언 a] --> sum(a); 와 같이 출력됩니다.<br>
+                <p style="font-size: 20px; display: inline; color:#ba2d65;">(파라미터 선언은 Assertion Parameters를 참고해주세요.)</p><br>
+                <p style="font-size: 20px; display: inline; color:#ba2d65;">(변수 선언은 Assertion Variables를 참고해주세요.)</p>
+
+            </p>
+        </div>
+        <div class="for">
+            <h1>Loop statements 사용 방법<br></h1>
+            <p>Loop statements는 반복문을 사용하는 방법입니다.<br>
+            반복문에는 for, while이 해당됩니다.<br>
+            <p class="Accent">for의 경우</p> 범위가 숫자일 경우엔, [반복문 선언 for a in range, 파라미터 선언 x] --> for a in range(x): 와 같이 출력됩니다.<br>
+            만약 범위에 숫자를 넣는 것이 아닌, 리스트를 넣는다면 [반복문 선언 for a in, 파라미터 선언 x ] --> for a in x: 와 같이 출력됩니다.<br>
+            <p class="Accent">while의 경우</p> [반복문 선언 while, 논리 식 선언 ] --> while(논리 식): 와 같이 출력됩니다. <br>
+            <p style="font-size: 20px; display: inline; color:#ba2d65;">(파라미터 선언은 Assertion Parameters를 참고해주세요.)</p><br>
+            <p style="font-size: 20px; display: inline; color:#ba2d65;">(논리 식 선언 방법은 Bool logic을 참고해주세요.)</p>
+            
+            </p>
+        </div>
+        <div class="if">
+            <h1>IF statements 사용 방법<br></h1>
+            <p>
+                IF statements에는 조건식을 사용하는 방법이 들어있습니다.<br>
+                조건식에는 if, elif, else가 포함되며 이를 사용하시려면<br>
+                <p class="Accent">if의 경우</p> [조건문 사용 if, 논리 식 선언 ] --> if(논리 식 선언): 와 같이 출력됩니다. <br>
+                <p class="Accent">elif의 경우</p> [조건문 사용 else if, 논리 식 선언 ] --> elif(논리 식 선언): 와 같이 출력됩니다. <br>
+                <p class="Accent">else의 경우</p> [조건문 사용 else, 논리 식 선언 ] --> else(논리 식 선언): 와 같이 출력됩니다. <br><p style="font-size: 20px; display: inline; color:#ba2d65;">(논리 식 선언 방법은 Bool logic을 참고해주세요.)</p><br>
+            </p>
+        </div>
+        <div class="def">
+            <h1>User Define Func Usage 사용 방법</h1>
+            <p>
+                User Define Func Usage에는 사용자가 함수를 정의하는 방법에 대해 설명되어 있습니다.<br>
+                원하시는 함수명을 입력하시면 해당 함수가 정의됩니다.<br>
+                예를 들자면, [함수 선언 aaa, 파라미터 선언 c] --> def aaa(c): 와 같이 출력됩니다.<br> <p style="font-size: 20px; display: inline; color:#ba2d65;">(파라미터 선언 방법은 Assertion Parameters를 참고해주세요.)</p><br>
+            </p>
+        </div>
+        <div class="bool">
+            <h1>Bool logic 사용 방법<br></h1>
+            <p>
+                Bool logic에는 논리 식을 사용하는 방법에 대해 설명되어 있습니다.<br>
+                총 5가지의 논리식 선언이 가능하며, 가능한 논리식은 다음과 같습니다.<br>
+                <p class="Accent"> 1: A는 B 와 같다</p> --> [논리식 선언 A는 B와 같다] --> A = B <br>
+                <p class="Accent"> 2: A는 B 보다 크다</p> --> [논리식 선언 A는 B보다 크다] --> A > B<br>
+                <p class="Accent"> 3: A는 B 보다 크거나 같다</p> --> [논리식 선언 A는 B보다 크거나 같다] --> A >= B<br>
+                <p class="Accent"> 4: A는 B 보다 작거나 같다</p> --> [논리식 선언 A는 B보다 작거나 같다] --> A <= B<br>
+                <p class="Accent"> 5: A는 B 보다 작다</p> --> [논리식 선언 A는 B보다 작다] --> A < B<br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

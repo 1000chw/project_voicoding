@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="Voico_Home.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voicoding</title>
+        <script defer src="https://kit.fontawesome.com/a5f26fa106.js" crossorigin="anonymous"></script>
+        <script defer src="menu.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <script defer src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+        <meta name="description" content="Free and open-source online code editor that allows you to write and execute code from a rich set of languages.">
+        <meta name="keywords" content="online editor, online code editor, online ide, online compiler, online interpreter, run code online, learn programming online,
+                online debugger, programming in browser, online code runner, online code execution, debug online, debug C code online, debug C++ code online,
+                programming online, snippet, snippets, code snippet, code snippets, pastebin, execute code, programming in browser, run c online, run C++ online,
+                run java online, run python online, run ruby online, run c# online, run rust online, run pascal online, run basic online">
+        <meta name="author" content="Herman Zvonimir Došilović">
+
+
+        <meta property="og:title" content="Judge0 IDE - Free and open-source online code editor">
+        <meta property="og:description" content="Free and open-source online code editor that allows you to write and execute code from a rich set of languages.">
+        <meta property="og:image" content="https://raw.githubusercontent.com/judge0/ide/master/.github/wallpaper.png">
+
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/golden-layout/1.5.9/goldenlayout.min.js" integrity="sha256-NhJAZDfGgv4PiB+GVlSrPdh3uc75XXYSM4su8hgTchI=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/golden-layout/1.5.9/css/goldenlayout-base.css" integrity="sha256-oIDR18yKFZtfjCJfDsJYpTBv1S9QmxYopeqw2dO96xM=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/golden-layout/1.5.9/css/goldenlayout-dark-theme.css" integrity="sha256-ygw8PvSDJJUGLf6Q9KIQsYR3mOmiQNlDaxMLDOx9xL0=" crossorigin="anonymous" />
+
+        <script>
+            var require = {
+                paths: {
+                    "vs": "https://unpkg.com/monaco-editor/min/vs",
+                    "monaco-vim": "https://unpkg.com/monaco-vim/dist/monaco-vim",
+                    "monaco-emacs": "https://unpkg.com/monaco-emacs/dist/monaco-emacs"
+                }
+            };
+        </script>
+        <script defer src="https://unpkg.com/monaco-editor/min/vs/loader.js"></script>
+        <script defer src="https://unpkg.com/monaco-editor@0.23.0/min/vs/editor/editor.main.nls.js"></script>
+        <script defer src="https://unpkg.com/monaco-editor@0.23.0/min/vs/editor/editor.main.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI=" crossorigin="anonymous"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
+        <script type="text/javascript" defer src="third_party/download.js"></script>
+
+        <script type="text/javascript" defer src="js/ide.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="css/ide.css">
+
+        <title>Judge0 IDE - Free and open-source online code editor</title>
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+        <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-RHNJ50BJ2F"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RHNJ50BJ2F');
+        </script>
+
+        <script defer type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="ee4621ff-c682-44ac-8cfa-1835beddb98a";(function(){d=document;s=d.createElement("script"); src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    </head>
+    <body>
+        <nav class="voi_menu">
+            <div class="menu_bar_logo">
+                <i class="fas fa-microphone-alt"></i>
+                <a class = "basic" href="Voico_Menu.html">Voicoding</a>
+            </div>
+            <ul class="menu_bar_content">
+                <a class = "basic" href="Voico_Home.html"><li>Home</li></a>
+                <a class="basic" href="#" onclick="window.open('Voico_Manual.html')"><li>Manual</li></a>
+                <a class = "basic" href="Voico_Info.html"><li>Info</li></a>
+            </ul>
+            <ul class="menu_bar_icons">
+                <a class="basic" href="https://www.instagram.com/voicoding__/"><li><i class="fab fa-instagram"></i></li></a>
+                <a class="basic" href="http://khuhub.khu.ac.kr/2019102168/Voicoding"><li><i class="fab fa-github"></i></li></a></li>
+            </ul>
+            <a href="#" class="menu_toggle"><i class="fas fa-bars"></i></a>
+        </nav>
+        <div class="controls">
+            <button id="recordButton">Speech</button>
+            <button id="transcribeButton" disabled>To text</button>
+        </div>
+        <div class="output_bar">
+            <h2>Transcription Raw Data</h2>
+        </div>
+        <div id="output" style="overflow:auto"></div>
+        <i class="fas fa-arrow-circle-down"></i>
+        <div class="output_bar">
+            <h2>TTP</h2>
+        </div>
+        <div id="site-navigation" class="ui small inverted menu" style="margin:20px 20px 0px 20px;">
+            <div id="site-header" class="header item">
+                
+            </div>
+            <div class="left menu" >
+                <div class="ui dropdown item site-links on-hover">
+                    File <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" target="_blank" href="/"><i class="file code icon"></i> New File</a>
+                        <div class="item" onclick="downloadSource()"><i class="download icon"></i> Download</div>
+                        <div id="insert-template-btn" class="item"><i class="file code outline icon"></i> Insert template
+                            for current language</div>
+                    </div>
+                </div>
+                
+                <div class="item borderless">
+                    
+                </div>
+                <div class="item fitted borderless wide screen only">
+                    <div class="ui input">
+                        <p id="compiler-options" type="text" placeholder="Compiler options"></p>
+                    </div>
+                </div>
+                <div class="item borderless wide screen only">
+                    <div class="ui input">
+                        <p id="command-line-arguments" type="text" placeholder="Command line arguments"></p>
+                    </div>
+                </div>
+                <div class="item no-left-padding borderless">
+                    <button id="run-btn" class="ui primary labeled icon button"><i class="play icon"></i>Run (F9)</button>
+                </div>
+                
+            </div>
+            
+        </div>
+    
+        <div id="site-content"style="margin:0px 20px 20px 20px;"></div>
+    
+        <div id="site-modal" class="ui modal">
+            <div class="header">
+                <i class="close icon"></i>
+                <span id="title"></span>
+            </div>
+            <div class="scrolling content"></div>
+            <div class="actions">
+                <div class="ui small labeled icon cancel button">
+                    <i class="remove icon"></i>
+                    Close (ESC)
+                </div>
+            </div>
+        </div>
+    
+        <div id="site-settings" class="ui modal">
+            <i class="close icon"></i>
+            <div class="header">
+                <i class="cog icon"></i>
+                Settings
+            </div>
+            <div class="content">
+                <div class="ui form">
+                    <div class="inline fields">
+                        <label>Editor Mode</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="editor-mode" value="normal" checked="checked">
+                                <label>Normal</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="editor-mode" value="vim">
+                                <label>Vim</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="editor-mode" value="emacs">
+                                <label>Emacs</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="redirect-output">
+                            <label>Redirect stderr to stdout</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <div id="editor-status-line"></div>
+            
+    </body>
+</html>

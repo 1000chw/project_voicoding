@@ -1,0 +1,23 @@
+{
+  "name": "voicoding",
+  "version": "1.0.0",
+  "description": "Voicoding",
+  "main": "voicoding.js",
+  "dependencies": {
+    "@google-cloud/speech": "^4.5.2",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.2",
+    "node-record-lpcm16": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://khuhub.khu.ac.kr/2019102168/Voicoding.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
